@@ -1,4 +1,4 @@
-#Sales Forecast Prediction using MLOps
+# Sales Forecast Prediction using MLOps
 
 ## Project Overview
 This project implements an end-to-end MLOps pipeline to predict future sales revenue based on business inputs such as advertising spend, market trends, and sales pipeline strength.  
