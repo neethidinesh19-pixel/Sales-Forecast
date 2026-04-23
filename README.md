@@ -1,6 +1,6 @@
-# 📊 Sales Forecast Prediction using MLOps
+#Sales Forecast Prediction using MLOps
 
-## 🔹 Project Overview
+## Project Overview
 This project implements an end-to-end MLOps pipeline to predict future sales revenue based on business inputs such as advertising spend, market trends, and sales pipeline strength.  
 
 The system automates:
@@ -12,9 +12,8 @@ The system automates:
 
 This ensures scalability, consistency, and minimal manual intervention.
 
----
 
-## 🔹 Business Objective
+## Business Objective
 The goal is to build an automated system that helps organizations:
 - Predict future sales (weekly, monthly, quarterly)
 - Improve decision-making
@@ -22,19 +21,17 @@ The goal is to build an automated system that helps organizations:
 - Reduce risks in sales forecasting
 - Establish benchmarks for future analysis
 
----
 
-## 🔹 Features
-- 📈 Machine Learning-based sales prediction
-- ⚙️ Automated CI/CD pipeline using GitHub Actions
-- 🤖 Model training and evaluation
-- 🌐 Deployment using Streamlit on Hugging Face
-- 📊 Interactive visualization of predictions
-- 🔄 End-to-end automation pipeline
+## Features
+- Machine Learning-based sales prediction
+- Automated CI/CD pipeline using GitHub Actions
+- Model training and evaluation
+- Deployment using Streamlit on Hugging Face
+- Interactive visualization of predictions
+- End-to-end automation pipeline
 
----
 
-## 🔹 Tech Stack
+## Tech Stack
 - **Programming:** Python
 - **ML Models:** Scikit-learn (Random Forest, etc.)
 - **Visualization:** Matplotlib
@@ -43,9 +40,8 @@ The goal is to build an automated system that helps organizations:
 - **Model Hosting:** Hugging Face
 - **Containerization:** Docker
 
----
 
-## 🔹 Project Structure
+##  Project Structure
 Sales-Forecast/
 │
 ├── .github/
@@ -57,17 +53,17 @@ Sales-Forecast/
 ├── requirements.txt # Dependencies
 ├── README.md # Project documentation
 
----
 
-## 🔹 Data Pipeline
+
+##  Data Pipeline
 1. Data is collected and registered on Hugging Face dataset space  
 2. Data cleaning and preprocessing is performed  
 3. Dataset is split into training and testing sets  
 4. Processed data is stored and reused  
 
----
 
-## 🔹 Model Training & Evaluation
+
+## Model Training & Evaluation
 - Multiple models can be used:
   - Decision Tree
   - Random Forest
@@ -77,9 +73,9 @@ Sales-Forecast/
 - Model is evaluated using performance metrics
 - Best model is saved and registered
 
----
 
-## 🔹 CI/CD Pipeline
+
+##  CI/CD Pipeline
 - Automated using GitHub Actions
 - Triggered on every push to the `main` branch
 - Handles:
@@ -88,44 +84,43 @@ Sales-Forecast/
   - Automation of ML workflow
 - Ensures reproducibility and continuous integration
 
----
 
-## 🔹 Deployment
+
+##  Deployment
 - Application is deployed using **Streamlit**
 - Hosted on **Hugging Face Spaces**
 - Users can interactively input values and get predictions
 
 ---
 
-## 🔹 Input Features
+##  Input Features
 - Advertising Spend (₹)
 - Market Trend Index (0–100)
 - Sales Pipeline Strength (%)
 - Region (North, South, East, West)
 - Season (Q1, Q2, Q3, Q4)
 
----
 
-## 🔹 Output
+##  Output
 - 💰 Predicted Sales Value
 - 📊 Visualization comparing inputs vs predicted sales
 
 ---
 
-## 🔹 Screenshots (Added in Notebook / Report)
+## Screenshots (Added in Notebook / Report)
 - GitHub repository structure  
 - GitHub Actions workflow execution  
 - Streamlit application UI  
 - Prediction output with graph  
 
----
 
-## 🔹 GitHub Repository
+
+##  GitHub Repository
 🔗 [View Project Repository](https://github.com/neethidinesh19-pixel/Sales-Forecast)
 
 ---
 
-## 🔹 Conclusion
+## Conclusion
 This project demonstrates a complete MLOps workflow integrating machine learning, automation, and deployment.  
 
 The solution enables:
@@ -134,9 +129,8 @@ The solution enables:
 - Scalable deployment  
 - Improved business decision-making  
 
----
 
-## 🔹 Future Improvements
+##  Future Improvements
 - Add real-time data ingestion  
 - Use advanced models (XGBoost, Deep Learning)  
 - Add API-based deployment  
@@ -144,6 +138,6 @@ The solution enables:
 
 ---
 
-## 👨‍💻 Author
+## Author
 **Neethi D**  
 GitHub: https://github.com/neethidinesh19-pixel
