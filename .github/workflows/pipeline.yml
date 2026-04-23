@@ -1,0 +1,46 @@
+name: Sales Forecast MLOps Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: 3.10
+
+    - name: Install dependencies
+      run: |
+        pip install -r requirements.txt
+
+    - name: Run Data Preparation
+      run: |
+        if [ -f src/data_preprocessing.py ]; then python src/data_preprocessing.py; fi
+
+    - name: Train Model
+      run: |
+        if [ -f src/train.py ]; then python src/train.py; fi
+
+    - name: Evaluate Model
+      run: |
+        if [ -f src/evaluate.py ]; then python src/evaluate.py; fi
+
+    - name: Save Model
+      run: |
+        if [ -f src/save_model.py ]; then python src/save_model.py; fi
+
+    - name: Deploy to Hugging Face
+      env:
+        HF_TOKEN: ${{ secrets.HF_TOKEN }}
+      run: |
+        if [ -f src/deploy.py ]; then python src/deploy.py; fi
